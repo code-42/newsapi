@@ -12,7 +12,7 @@ $(document).ready(function(){
             // console.log(response.sources[2]);
             var sources = response.sources;
             // console.log(sources[2]);
-            var html = "<select class='form-control' id='src'>";
+            var html = "<br><select class='form-control' id='src'>";
             $.each(sources, function(index, source){
                 // console.log(source);
                 html += "<option value='"+source.id+"'>" + source.name + "</option>";
@@ -26,7 +26,8 @@ $(document).ready(function(){
         }
     })
 
-    $("#source").submit(function(event){
+    // $("#source").submit(function(event){
+    $("#source").change(function(event){
         event.preventDefault();
         var id = $('#src').val();
         var url = "https://newsapi.org/v1/articles";
