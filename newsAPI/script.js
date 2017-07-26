@@ -40,7 +40,7 @@ $(document).ready(function(){
                 var articles = response.articles;
                 var html = "<ul class='list-group'>"
                 $.each(articles, function(index, article){
-                    html += "<li class='list-item'>" + article.title + "</li>"
+                    html += "<li class='list-item'>" + "<a href='"+article.url+"'>"+article.title+"</a>" + "</li>"
                 })
                 html += "</ul>";
                 $("#articles").html(html);
