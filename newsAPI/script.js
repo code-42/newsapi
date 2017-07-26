@@ -2,7 +2,6 @@ $(document).ready(function(){
     var apiKey = "2117363bf3ed40fbb54a480ca6852fbc";
     var url = "https://newsapi.org/v1/sources";
     var data = {language:"en",country:"us"};
-    var srcId = "";
 
     $.ajax({
         url: url,
@@ -18,8 +17,8 @@ $(document).ready(function(){
                 // console.log(source);
                 html += "<option value='"+source.id+"'>" + source.name + "</option>";
                 // console.log("source.id == " + source.id);
-                srcId = source.id;
-                console.log("21.srcId == " + srcId);
+                // srcId = source.id;
+                // console.log("21.srcId == " + srcId);
             })
             html += "</select>";
             // console.log(html);
@@ -37,8 +36,14 @@ $(document).ready(function(){
             data: data,
             type: "GET",
             success: function(response){
-                console.log(response);
-                // var articles = response.articles;
+                // console.log(response);
+                var articles = response.articles;
+                var html = "<ul class='list-group'>"
+                $.each(articles, function(index, article){
+                    html += "<li class='list-item'>" + article.title + "</li>"
+                })
+                html += "</ul>";
+                $("#articles").html(html);
             }
         })
     })    
