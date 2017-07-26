@@ -1,3 +1,275 @@
+ /*Mobile First Design */
+@media all and (max-width: 480px) {
+    #main, #page {
+        flex-direction: column;
+    }
+
+    #main > article, #main > nav, #main > aside {
+        order: 0;
+        
+    }
+
+    #main > nav, #main > aside, header, footer {
+        min-height: 50px;
+        max-height: 50px;
+        
+    }
+    
+    #temp {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .weather-data{
+        width: 80%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom: 10px;
+        padding:10px;
+        height:auto;
+        font-size:20px;
+        display: block;
+        position: relative;
+        bottom:0;
+        left: 10%;
+        height: 20%;
+        flex-basis: 10%;
+        color:black;
+        margin: 4px;
+        margin-bottom: 0;
+        padding: 5px;
+        background: transparent;
+    }
+        
+    body{
+        text-align:center;
+        background-color: transparent;
+        color:black;
+        background-repeat: no-repeat;
+        background-position:center;
+        background-attachment:fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+}
+
+@media all and (min-width: 481px) {
+    #main, #page {
+        flex-direction: column;
+    }
+
+    #main > article, #main > nav, #main > aside {
+        order: 0;
+        
+    }
+
+    #main > nav, #main > aside, header, footer {
+        min-height: 50px;
+        max-height: 50px;
+        
+    }
+    
+    #temp{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .weather-data{
+        width: 80%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom: 10px;
+        padding:10px;
+        height:auto;
+        font-size:20px;
+        display: block;
+        position: relative;
+        bottom:0;
+        left: 10%;
+        height: 20%;
+        flex-basis: 10%;
+        color:white;
+        margin: 4px;
+        margin-bottom: 0;
+        padding: 5px;
+        background: transparent;
+        }
+        
+    body{
+        text-align:center;
+        background-color: transparent;
+        color:black;
+        background-repeat: no-repeat;
+        background-position:center;
+        background-attachment:fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media all and (min-width: 641px) {
+    #main, #page {
+        flex-direction: column;
+    }
+
+    #main > article, #main > nav, #main > aside {
+        order: 0;
+        
+    }
+
+    #main > nav, #main > aside, header, footer {
+        min-height: 50px;
+        max-height: 50px;
+        
+    }
+    
+    #temp{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .weather-data{
+        width: 80%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom: 10px;
+        padding:10px;
+        height:auto;
+        font-size:20px;
+        display: block;
+        position: relative;
+        bottom:0;
+        left: 10%;
+        height: 20%;
+        flex-basis: 10%;
+        color:black;
+        margin: 4px;
+        margin-bottom: 0;
+        padding: 5px;
+        background: transparent;
+        }
+        
+    body{
+        text-align:center;
+        background-color: transparent;
+        color:black;
+        background-repeat: no-repeat;
+        background-position:center;
+        background-attachment:fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+}
+
+@media all and (min-width: 760px) {
+    #main, #page {
+        flex-direction: column;
+    }
+
+    #main > article, #main > nav, #main > aside {
+        order: 0;
+        
+    }
+
+    #main > nav, #main > aside, header, footer {
+        min-height: 50px;
+        max-height: 50px;
+        
+    }
+    
+    #temp{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    .weather-data{
+        width: 80%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom: 10px;
+        padding:10px;
+        height:auto;
+        font-size:20px;
+        display: block;
+        position: relative;
+        bottom:0;
+        left: 10%;
+        height: 20%;
+        flex-basis: 10%;
+        color:#000000;
+        margin: 4px;
+        margin-bottom: 0;
+        padding: 5px;
+        background: transparent;
+        }
+        
+    body{
+        text-align:center;
+        background-color: transparent;
+        color:#000000;
+        background-repeat: no-repeat;
+        background-position:center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        text-decoration: none;
+    }
+
+}
+
+ css below applies to all 
+
+ * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+    color: #ffffff;
+}
+
+#footer {
+    text-align: center;
+    display: inline;
+    position: relative;
+    bottom:0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    color:#000000;
+    margin: 4px;
+    margin-top: -20px;
+    margin-bottom: 0;
+    padding: 5px;
+    background: transparent;
+    text-decoration: none;
+    text-decoration-color:#000000;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color:#000000;   
+}
+
+h1{
+    color:#000000;
+    font-size:48px;
+    font-weight: bolder;
+} 
+ 
+
+
 body{
     background-color: #e3deee;
     padding-top: 65px;
@@ -9,7 +281,39 @@ article{
 }
 
 img{
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    /*max-width: 100%;*/
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    display: flex;
+    min-height: 100%;
+    min-width: 100%;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.img-fluid{
+    display: flex;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+footer{
+  padding-top: 20px;
+  text-align: center;
+  display: inline;
+  position: relative;
+}
+
+#articles{
+    text-align: left;
+}
+
+.list-group-item:nth-child(odd){
+    background: #e6e6ff;
+    font-size: large;
+}
+
+.articleDescription, .articlePublishedAt{
+    font-size: medium;
+    color: green;
 }

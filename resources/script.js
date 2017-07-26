@@ -42,7 +42,8 @@ $(document).ready(function(){
                 var articles = response.articles;
                 var html = "<ul class='list-group'>"
                 $.each(articles, function(index, article){
-                    html += "<li class='list-item'>" + "<a href='"+article.url+"'>"+article.title+"</a>" + "</li>"
+                    html += "<li class='list-group-item'>" + "<a href='"+article.url+"' target='_blank'><h1>"+article.title+"</h1></a>" +
+                    "<p class='articleDescription'>" + article.description + "</p>" + "<p class='articlePublishedAt'>" + article.publishedAt + "</p></li>"
                 })
                 html += "</ul>";
                 $("#articles").html(html);
