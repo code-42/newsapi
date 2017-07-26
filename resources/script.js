@@ -13,7 +13,7 @@ $(document).ready(function(){
             var sources = response.sources;
             // console.log(sources[2]);
             var html = "<br><select class='form-control' id='src'>";
-            html += "<option value='' disabled selected hidden>Please select your news here</option>";
+            // html += "<option value='' disabled selected hidden>Please select your news here</option>";
             $.each(sources, function(index, source){
                 // console.log(source);
                 html += "<option value='"+source.id+"'>" + source.name + "</option>";
