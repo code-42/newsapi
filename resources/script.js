@@ -12,8 +12,8 @@ $(document).ready(function(){
             // console.log(response.sources[2]);
             var sources = response.sources;
             // console.log(sources[2]);
-            var html = "<br><select class='form-control' id='src'>";
-            html += "<option value='' disabled hidden selected>Please select the news that you choose here...</option>"
+            var html = "<select class='form-control' id='src'>";
+            html += "<option value='' disabled hidden selected>Please select your news source here...</option>"
             $.each(sources, function(index, source){
                 // console.log(source);
                 html += "<option value='"+source.id+"'>" + source.name + "</option>";
@@ -42,8 +42,13 @@ $(document).ready(function(){
                 var articles = response.articles;
                 var html = "<ul class='list-group'>"
                 $.each(articles, function(index, article){
-                    html += "<li class='list-group-item'>" + "<a href='"+article.url+"' target='_blank'><h1>"+article.title+"</h1></a>" +
-                    "<p class='articleDescription'>" + article.description + "</p>" + "<p class='articlePublishedAt'>" + article.publishedAt + "</p></li>"
+                    html += 
+                    "<li class='list-group-item'>" +
+                    // "<span class='headline-img'><img src='" + article.urlToImage + "'></span>" +
+                    "<a href='" + article.url + "' target='_blank' class='title'>" + article.title + "</a>" +
+                    "<p class='articleDescription'>" + article.description + "</p>" + 
+                    "<p class='articlePublishedAt'>" + article.publishedAt + " &middot; " + article.author + "</p>" +
+                    "</li>"
                 })
                 html += "</ul>";
                 $("#articles").html(html);
@@ -51,57 +56,3 @@ $(document).ready(function(){
         })
     })    
 });
-
-
-// $(document).ready(function(){
-//     var apiKey = "2117363bf3ed40fbb54a480ca6852fbc";
-//     var url = "https://newsapi.org/v1/sources";
-//     var data = {language:"en",country:"us"};
-
-//     $.ajax({
-//         url: url,
-//         data: data,
-//         type: "GET",
-//         success: function(response){
-//             // console.log(response);
-//             // console.log(response.sources[2]);
-//             var sources = response.sources;
-//             // console.log(sources[2]);
-//             var html = "<br><select class='form-control' id='src'>";
-//             // html += "<option value='' disabled selected hidden>Please select your news here</option>";
-//             $.each(sources, function(index, source){
-//                 // console.log(source);
-//                 html += "<option value='"+source.id+"'>" + source.name + "</option>";
-//                 // console.log("source.id == " + source.id);
-//                 // srcId = source.id;
-//                 // console.log("21.srcId == " + srcId);
-//             })
-//             html += "</select>";
-//             // console.log(html);
-//             $(".form-group").html(html);
-//         }
-//     })
-
-//     // $("#source").submit(function(event){
-//     $("#source").change(function(event){
-//         event.preventDefault();
-//         var id = $('#src').val();
-//         var url = "https://newsapi.org/v1/articles";
-//         var data = {apiKey: apiKey, source: id};
-//         $.ajax({
-//             url:url,
-//             data: data,
-//             type: "GET",
-//             success: function(response){
-//                 // console.log(response);
-//                 var articles = response.articles;
-//                 var html = "<ul class='list-group'>"
-//                 $.each(articles, function(index, article){
-//                     html += "<li class='list-group-item'>" + "<a href='"+article.url+"' target='_blank'>"+article.title+"</a>" + "</li>"
-//                 })
-//                 html += "</ul>";
-//                 $("#articles").html(html);
-//             }
-//         })
-//     })    
-// });

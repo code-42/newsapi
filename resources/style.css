@@ -272,7 +272,7 @@ h1{
 
 body{
     background-color: #e3deee;
-    padding-top: 65px;
+    /*padding-top: 65px;*/
     /*text-align: center;*/
 }
 
@@ -280,6 +280,9 @@ article{
     /*text-align: center;*/
 }
 
+li{
+    width: 100%;
+}
 img{
     /*max-width: 100%;*/
     margin-left: 0 auto;
@@ -288,13 +291,27 @@ img{
     min-height: 100%;
     min-width: 100%;
     justify-content: center;
-    object-fit: contain;
+    /*object-fit: contain;*/
 }
 
 .img-fluid{
     display: flex;
     min-height: 100%;
     min-width: 100%;
+}
+
+.headline-img{
+    display:table;
+    table-layout: fixed;
+    height: 80px;
+    width: 150px;
+    margin-left: 0 auto;
+    margin-right: 10 auto;
+    display: flex;
+    float:left;
+    /*min-height: 100%;*/
+    /*min-width: 100%;*/
+    /*justify-content: center;*/
 }
 
 footer{
@@ -310,10 +327,15 @@ footer{
 
 .list-group-item:nth-child(odd){
     background: #e6e6ff;
-    font-size: large;
+    display:inline-block;
 }
 
 .articleDescription, .articlePublishedAt{
     font-size: medium;
     color: green;
+}
+
+.title{
+    font-size: x-large;
+    font-weight:bold;
 }

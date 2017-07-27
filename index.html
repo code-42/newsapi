@@ -1,14 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+	<meta content="news api with drop-down list box of news sources" name="description">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
     <title>NewsAPI V4</title>
     
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="resources/style.css" rel="stylesheet">    
+    
+    <link href="resources/style.css" rel="stylesheet">
+    <link href="resources/navbar.css" rel="stylesheet">
 </head>
 <body>
     
+<header>
+    <div class="navbar-wrapper">
+		 <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="https://code-42.github.io/my_portfolio">My Portfolio</a>
+		    </div>
+		  </div>
+		</nav> 
+	</div>
+</header>
+
+<main>
+    <h1 id="top">The News That You Choose</h1>    
     <div class="container">
         <form id="source">
             <div class="form-group">
@@ -22,13 +41,13 @@
         <div class="well" id="articles">
             <img src="http://magicsaucemedia.com/wp-content/uploads/2009/11/mediakudoslogos.jpg" alt="news logos"/>
         </div>
-        
     </div>
-    
+</main>
+
     <!-- FOOTER -->
-	<footer>
-		<p id="footer">&copy; 2017 Edward Dupre &middot; <a href="https://code-42.github.io/my_portfolio">Back to My Portfolio</a> &middot; <a href="https://github.com/code-42/vc_workshop">My Github Repo</a></p>
-	</footer>
+<footer>
+	<p id="footer">&copy; 2017 Edward Dupre &middot; <a href="https://code-42.github.io/my_portfolio">Back to My Portfolio</a> &middot; <a href="https://github.com/code-42/vc_workshop">My Github Repo</a></p>
+</footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="resources/script.js"></script>
