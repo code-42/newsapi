@@ -288,7 +288,7 @@ img{
     margin-left: 0 auto;
     margin-right: 0 auto;
     display: flex;
-    height: 100%;
+    height: auto;
     width: 100%;
     justify-content: center;
     /*object-fit: contain;*/
@@ -323,6 +323,7 @@ footer{
 
 #articles{
     text-align: left;
+    border: 1px solid #e3dee0;
 }
 
 .list-group-item:nth-child(odd){
