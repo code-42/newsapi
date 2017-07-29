@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var apiKey = "2117363bf3ed40fbb54a480ca6852fbc";
+    var apiKey = "haha";
     var url = "https://newsapi.org/v1/sources";
     var data = {language:"en",country:"us"};
 
