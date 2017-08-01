@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+
     var url = "https://newsapi.org/v1/sources";
     var data = {language:"en",country:"us"};
 
@@ -17,9 +17,6 @@ $(document).ready(function(){
             $.each(sources, function(index, source){
                 // console.log(source);
                 html += "<option value='"+source.id+"'>" + source.name + "</option>";
-                // console.log("source.id == " + source.id);
-                // srcId = source.id;
-                // console.log("21.srcId == " + srcId);
             })
             html += "</select>";
             // console.log(html);
@@ -45,14 +42,8 @@ $(document).ready(function(){
                 $.each(articles, function(index, article){
                     html += 
                     "<li class='list-group-item'>" +
-<<<<<<< HEAD
-                    "<div class='grid-container'>" +
-                    "<section class='section-2'><img src='" + article.urlToImage + "'></setion>" +
-                    "<main><a href='" + article.url + "' target='_blank' class='title'>" + article.title + "</a>" +
-=======
-                    "<span class='headline-img'><img src='" + article.urlToImage + "'></span>" +
+                    // "<span class='headline-img'><img src='" + article.urlToImage + "'></span>" +
                     "<a href='" + article.url + "' target='_blank' class='title'>" + article.title + "</a>" +
->>>>>>> v4
                     "<p class='articleDescription'>" + article.description + "</p>" + 
                     "<p class='articlePublishedAt'>" + article.publishedAt + " &middot; " + article.author + "</p>" +
                     "</main></div></li>"
