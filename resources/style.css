@@ -288,8 +288,13 @@ img{
     margin-left: 0 auto;
     margin-right: 0 auto;
     display: flex;
+<<<<<<< HEAD
     /*height: auto;*/
     /*width: 100% auto;*/
+=======
+    height: auto;
+    width: 100%;
+>>>>>>> v4
     justify-content: center;
     /*object-fit: contain;*/
 }
@@ -309,6 +314,7 @@ img{
     margin-right: 10 auto;
     display: flex;
     float:left;
+    padding: 20px;
     /*min-height: 100%;*/
     /*min-width: 100%;*/
     /*justify-content: center;*/
