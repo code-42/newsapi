@@ -44,7 +44,7 @@ $(document).ready(function(){
                 $.each(articles, function(index, article){
                     html += 
                     "<li class='list-group-item'>" +
-                    // "<span class='headline-img'><img src='" + article.urlToImage + "'></span>" +
+                    "<span class='headline-img'><img src='" + article.urlToImage + "'></span>" +
                     "<a href='" + article.url + "' target='_blank' class='title'>" + article.title + "</a>" +
                     "<p class='articleDescription'>" + article.description + "</p>" + 
                     "<p class='articlePublishedAt'>" + article.publishedAt + " &middot; " + article.author + "</p>" +
