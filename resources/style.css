@@ -309,6 +309,7 @@ img{
     margin-right: 10 auto;
     display: flex;
     float:left;
+    padding: 20px;
     /*min-height: 100%;*/
     /*min-width: 100%;*/
     /*justify-content: center;*/
