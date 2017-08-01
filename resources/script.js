@@ -30,6 +30,7 @@ $(document).ready(function(){
     // $("#source").submit(function(event){
     $("#source").change(function(event){
         event.preventDefault();
+        // alert("Thanks for visiting my news app.  Unfortunately, I had to remove my API Key from github.com because it's not secure, so now my app doesn't work.  :(  \r\n\r\nStay tuned, I will figure out a work-around soon.  :)")
         var id = $('#src').val();
         var url = "https://newsapi.org/v1/articles";
         var data = {apiKey: apiKey, source: id};
@@ -44,11 +45,12 @@ $(document).ready(function(){
                 $.each(articles, function(index, article){
                     html += 
                     "<li class='list-group-item'>" +
-                    // "<span class='headline-img'><img src='" + article.urlToImage + "'></span>" +
-                    "<a href='" + article.url + "' target='_blank' class='title'>" + article.title + "</a>" +
+                    "<div class='grid-container'>" +
+                    "<section class='section-2'><img src='" + article.urlToImage + "'></setion>" +
+                    "<main><a href='" + article.url + "' target='_blank' class='title'>" + article.title + "</a>" +
                     "<p class='articleDescription'>" + article.description + "</p>" + 
                     "<p class='articlePublishedAt'>" + article.publishedAt + " &middot; " + article.author + "</p>" +
-                    "</li>"
+                    "</main></div></li>"
                 })
                 html += "</ul>";
                 $("#articles").html(html);
